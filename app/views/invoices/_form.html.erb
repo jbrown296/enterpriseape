@@ -30,10 +30,12 @@
           <%= f.text_field :tax %>
         </div>
       </div>
+      
+
       <div class="control-group">
-        <%= f.label :staffperson, class: 'control-label' %><br>
+        <%= f.label :employee_id, class: 'control-label' %>
         <div class="controls">
-          <%= f.text_field :staffperson %>
+          <%= collection_select( :invoice, :employee_id, Employee.all, :id, :name, {}, { :multiple => false}) %>
         </div>
       </div>
 
