@@ -36,6 +36,13 @@
           <%= f.text_field :staffperson %>
         </div>
       </div>
+
+      <div class="control-group">
+        <%= f.label "Status", class: 'control-label' %>
+        <div class="controls">
+          <%= f.select(:status_type, options_for_select([['PAID', 'PAID'], ['PENDING', 'PENDING']])) %>
+        </div>
+      </div>
       <br>
       <div class="control-group">
         <div class="controls">
