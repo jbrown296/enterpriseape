@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20160113043443) do
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
     t.string   "status_type"
-    t.integer  "salesperson_id"
+    # t.integer  "salesperson_id"
     t.integer  "employee_id"
   end
 
