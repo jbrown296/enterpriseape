@@ -20,7 +20,6 @@
 
 		<% if current_user %>
 			<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
-
 			<div class='btn-group pull-right right-nav'>
 				<button type="button" class="btn btn-mini dropdown-toggle active" data-toggle="dropdown">
 					<span class="caret"></span>
@@ -32,7 +31,6 @@
 					<li><%= link_to "Companies", companies_path %>
 				</ul>
 			</div>
-
 		<% else %>
 			<li><%= link_to "Sign Up", new_user_registration_path %></li>
 			<li><%= link_to "Sign In", new_user_session_path %></li>
