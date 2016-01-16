@@ -8,7 +8,7 @@
       <th>Name</th>
       <th>Category</th>
       <th>Quantity</th>
-      <th>Invoice</th>
+      <th>Price</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +19,7 @@
         <td><%= purchase.name %></td>
         <td><%= purchase.category %></td>
         <td><%= purchase.quantity %></td>
-        <td><%= purchase.invoice %></td>
+        <td><%= purchase.price %></td>
         <td><%= link_to 'Show', purchase %></td>
         <td><%= link_to 'Edit', edit_purchase_path(purchase) %></td>
         <td><%= link_to 'Destroy', purchase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
